@@ -1,0 +1,36 @@
+﻿<Window x:Class="RoleQueue.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoleQueue.WPF"
+        mc:Ignorable="d"
+        Title="HomeWorkPF" Height="768" Width="768" Closing="Window_Closing">
+
+    <StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="4">
+            <Label x:Name="WelcomeMessage" FontFamily="Sitka Small" FontSize="24">QUEUE Simulator :3</Label>
+            <TextBlock FontFamily="Sitka Small" FontSize="14"><Run Text="    Добавьте достаточное кол-во игроков в очередь, чтобы можно было собрать две команды"/></TextBlock>
+            <TextBlock FontFamily="Sitka Small" FontSize="14"><Run Text="  из игроков с ролями Tank, Damage Dealer, и Support (по 3 в каждой). Нажмите на"/></TextBlock>
+            <TextBlock FontFamily="Sitka Small" FontSize="14"><Run Text="  кнопку запуска сессии, и люди в начале очереди начнут биться , после чего трое выиграют. "/></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="250,4" Height="44">
+            <Button x:Name="newPlayer" IsEnabled="True" Width="100" Margin="5" Click="newPlayer_Click">Add New Player</Button>
+            <Button x:Name="newSesh" IsEnabled="False" Width="100" Margin="5" Click="newSesh_Click">Create Session</Button>
+        </StackPanel>
+        <DataGrid Name="currentQueue" ItemsSource="{Binding}" AutoGenerateColumns="False" SelectionChanged="currentQueue_SelectionChanged">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type Panel}">
+                    <Setter Property="Margin" Value="0,0,0,6" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Player ID"  Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Role"  Binding="{Binding Role}"/>
+                <DataGridTextColumn Header="Log-in time" Binding="{Binding LoggedInSince}" />
+                <DataGridTextColumn Header="Wins" Binding="{Binding WinCount}" />
+                <DataGridTextColumn Header="Losses" Binding="{Binding LossCount}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Window>

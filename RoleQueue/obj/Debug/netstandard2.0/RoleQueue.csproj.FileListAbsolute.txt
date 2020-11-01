@@ -1,0 +1,9 @@
+C:\Users\axdzh\source\repos\RoleQueue\RoleQueue\bin\Debug\netstandard2.0\RoleQueue.deps.json
+C:\Users\axdzh\source\repos\RoleQueue\RoleQueue\bin\Debug\netstandard2.0\RoleQueue.dll
+C:\Users\axdzh\source\repos\RoleQueue\RoleQueue\bin\Debug\netstandard2.0\RoleQueue.pdb
+C:\Users\axdzh\source\repos\RoleQueue\RoleQueue\obj\Debug\netstandard2.0\RoleQueue.csprojAssemblyReference.cache
+C:\Users\axdzh\source\repos\RoleQueue\RoleQueue\obj\Debug\netstandard2.0\RoleQueue.AssemblyInfoInputs.cache
+C:\Users\axdzh\source\repos\RoleQueue\RoleQueue\obj\Debug\netstandard2.0\RoleQueue.AssemblyInfo.cs
+C:\Users\axdzh\source\repos\RoleQueue\RoleQueue\obj\Debug\netstandard2.0\RoleQueue.csproj.CoreCompileInputs.cache
+C:\Users\axdzh\source\repos\RoleQueue\RoleQueue\obj\Debug\netstandard2.0\RoleQueue.dll
+C:\Users\axdzh\source\repos\RoleQueue\RoleQueue\obj\Debug\netstandard2.0\RoleQueue.pdb
